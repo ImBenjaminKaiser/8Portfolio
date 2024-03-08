@@ -1,3 +1,4 @@
+@charset "utf-8";
 header {
   background-color: red;
   height: 50px;
@@ -15,4 +16,4 @@ body {
 
 p {
   margin: 0;
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */

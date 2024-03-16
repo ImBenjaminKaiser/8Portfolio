@@ -1,19 +1,70 @@
-@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/ubuntu/Ubuntu-C.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
 header {
-  background-color: red;
+  background-color: #041941;
   height: 50px;
+  color: white;
 }
 
 footer {
-  background-color: blue;
+  background: #041941;
   height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+main {
+  height: 554.5px;
+  width: 100%;
+  background: #cbccd3;
 }
 
-p {
-  margin: 0;
-} /*# sourceMappingURL=global.css.map */
+.container {
+  display: flex;
+  height: 545px;
+  width: 100%;
+  background: #cbccd3;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-content {
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Ubuntu;
+}
+.text-content h1 {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 75px;
+}
+
+.main-image {
+  height: 350px;
+  width: 300px;
+  background: blue;
+}
+
+.clicker {
+  background: #041941;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}/*# sourceMappingURL=global.css.map */

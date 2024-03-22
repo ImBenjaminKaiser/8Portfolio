@@ -1,0 +1,102 @@
+*
+    font-family: 'setvie sans', sans-serif
+    font-weight: 400
+    font-style: normal
+
+@import url("https://use.typekit.net/fmf0nsi.css")
+
+body
+    // overflow-x: hidden
+    margin: 0
+    padding: 0
+
+.scroll-wrapper
+    display: flex
+    flex-direction: row
+    // width: vw
+
+.scroll-wrapper-wrapper
+    display: flex
+    align-items: center
+    // height: 100vh
+    width: 100%
+    background: lightgrey
+
+
+.scroll-box-element
+    display: flex
+    justify-content: space-around
+    width: 550px
+    margin: 100px
+    background: grey
+    padding: 25px
+    flex-direction: row
+
+.spacer
+    height: 100px
+    background-color: #97d1e2
+
+.scroll-text-header
+    font-size: 30px
+    color: white
+    font-weight: 800
+    margin: 0
+    width: 250px
+    text-align: center
+    height:1em
+
+.scroll-box-description
+    color: white
+    margin: 20px
+    // height:100px
+    width: 200px
+    text-align: center
+    align-items: center
+
+
+
+.description-wrapper
+    display: flex
+    align-items: center
+
+.scroll-box-element-image-header
+    display: flex
+    flex-direction: center
+
+.five-qualities
+    font-weight: 800
+
+.header-text-font
+    font-family: "scale-variable", sans-serif
+    font-variation-settings: "wght" 200, "wdth" 90
+    letter-spacing: .1rem
+
+html.lenis 
+    height: auto
+
+.lenis.lenis-smooth 
+    scroll-behavior: auto
+
+.lenis.lenis-smooth [data-lenis-prevent] 
+    overscroll-behavior: contain
+
+.lenis.lenis-stopped 
+    overflow: hidden
+
+@media screen and (prefers-reduced-motion) 
+    .scroll-wrapper
+        flex-direction: column
+    .scroll-wrapper-wrapper
+        flex-direction: column
+        // height: 100%
+    body
+        background:lightgrey
+        height: 100%
+    html
+        height: 100%
+    .scroll-box-element
+        margin: 25px
+
+@media not screen and (prefers-reduced-motion: reduce)
+    .scroll-wrapper-wrapper
+        height:100vh

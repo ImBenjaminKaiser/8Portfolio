@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-header-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-header-text {
+  word-spacing: 30000px;
+  text-align: center;
+  font-family: "Stretch Pro", sans-serif;
+  font-size: 6vw;
+  justify-self: center;
+  align-self: center;
+  line-height: 1.1em;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.spacer {
+  height: 500px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=homepage.css.map */

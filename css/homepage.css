@@ -13,6 +13,7 @@
 }
 
 .hero-header-text {
+  white-space: pre-wrap;
   word-spacing: 30000px;
   text-align: center;
   font-family: "Stretch Pro", sans-serif;
@@ -20,6 +21,8 @@
   justify-self: center;
   align-self: center;
   line-height: 1.1em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 svg {
@@ -33,4 +36,8 @@ svg {
 
 *::-webkit-scrollbar {
   display: none;
+}
+
+.stretch-font {
+  font-family: "Stretch Pro", sans-serif;
 }/*# sourceMappingURL=homepage.css.map */

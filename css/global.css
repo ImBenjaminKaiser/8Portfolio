@@ -1,7 +1,13 @@
 * {
-  font-family: "setvie sans", sans-serif;
+  font-family: "stevie sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }/*# sourceMappingURL=global.css.map */

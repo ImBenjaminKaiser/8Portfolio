@@ -1,15 +1,4 @@
 @import url("https://use.typekit.net/fmf0nsi.css");
-* {
-  font-family: "setvie sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .scroll-wrapper {
   display: flex;
   flex-direction: row;
@@ -19,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  background: lightgrey;
+  background-image: url(../img/5qualitybg.svg);
 }
 
 .scroll-box-element {
@@ -27,9 +16,11 @@ body {
   justify-content: space-around;
   width: 550px;
   margin: 100px;
-  background: grey;
+  -webkit-backdrop-filter: blur(5px) brightness(75%) saturate(2);
+          backdrop-filter: blur(5px) brightness(75%) saturate(2);
   padding: 25px;
   flex-direction: row;
+  border-radius: 10px;
 }
 
 .spacer {
@@ -41,7 +32,7 @@ body {
   font-size: 30px;
   color: white;
   font-weight: 800;
-  margin: 0;
+  margin-top: 15px;
   width: 250px;
   text-align: center;
   height: 1em;
@@ -51,18 +42,18 @@ body {
   color: white;
   margin: 20px;
   width: 200px;
-  text-align: center;
-  align-items: center;
+  align-self: center;
 }
 
-.description-wrapper {
+.image-wrapper {
   display: flex;
   align-items: center;
 }
 
-.scroll-box-element-image-header {
+.header-description-wrapper {
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .five-qualities {
@@ -71,7 +62,8 @@ body {
 
 .header-text-font {
   font-family: "scale-variable", sans-serif;
-  font-variation-settings: "wght" 200, "wdth" 90;
+  font-variation-settings: "wght" 200, "wdth" 50;
+  font-size: 45px;
   letter-spacing: 0.1rem;
 }
 

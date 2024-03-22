@@ -21,18 +21,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const scrollWrapper = document.querySelector('.scroll-wrapper');
     // Scroll Wrapper is the element that contains the boxes with the 5 qualities
-    
+
     const fiveQualityHeader = document.querySelector('.five-qualities');
     // The header next to the boxes
 
+    // Used getBoundingClientRect because it includes the margin, while element.offsetWidth does not
+    // From here: https://www.geeksforgeeks.org/how-to-get-the-elements-actual-width-and-height-in-javascript/
+
     const scrollWrapperWidth = scrollWrapper.getBoundingClientRect();
     // Get the width of the scroll wrapper element to be used in the x value of the animation, to make it responsive if I change the font size
-    
+
     const fiveQualityHeaderWidth = fiveQualityHeader.getBoundingClientRect();
     // Get the width of the Header to be used in the y value of the animation, to make it responsive for different screen sizes
 
-    // Used getBoundingClientRect because it includes the margin, while element.offsetWidth does not
-    // From here: https://www.geeksforgeeks.org/how-to-get-the-elements-actual-width-and-height-in-javascript/
+
 
     // Only run the animation code if the user does not have Prefer reduced motion set to true
     if (isReduced === false) {
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     gsap.to(".five-qualities",{
-        y:-((window.innerHeight / 2) - (fiveQualityHeaderWidth.height)),
+        y:-(scrollWrapperWidth.height/2),
         scrollTrigger: {
             trigger: scrollWrapperWrapper,
             start: "top top",

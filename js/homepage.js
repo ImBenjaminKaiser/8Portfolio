@@ -12,4 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
         stagger:.1,
         ease: "power4.out",
     })
-   });
+});

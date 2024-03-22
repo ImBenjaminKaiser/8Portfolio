@@ -39,23 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Only run the animation code if the user does not have Prefer reduced motion set to true
     if (isReduced === false) {
 
-    // From lenis docs: https://github.com/darkroomengineering/lenis?tab=readme-ov-file#gsap-scrolltrigger
-    const lenis = new Lenis({
-        duration:1.5,// How long it takes to catch up with the actual scroll position
-        wheelMultiplier: 1.3,// Makes the user scroll faster
-        smooth: true,
-        // easing: (t) => (t < 0.5 ? 16 * t * t * t * t * t : 1 - Math.pow(-2 * t + 2, 5) / 2)
-    });
-
-    lenis.on('scroll', (e) => {
-      console.log(e) // Shows information about the current scrolling state
-    });
-
-    lenis.on('scroll', ScrollTrigger.update);
-
-    gsap.ticker.add((time)=>{
-      lenis.raf(time * 1000)
-    });
     gsap.set(".five-qualities",{
         x:fiveQualityHeaderWidth.width/4
     });

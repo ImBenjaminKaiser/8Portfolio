@@ -9,4 +9,12 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+}
+
+.setvie-font {
+  font-family: "stevie sans", sans-serif;
+}
+
+.white {
+  color: white;
 }/*# sourceMappingURL=global.css.map */

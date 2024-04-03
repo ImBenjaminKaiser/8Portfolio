@@ -23,6 +23,7 @@
   line-height: 1.1em;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: -1;
 }
 
 svg {
@@ -30,8 +31,20 @@ svg {
   height: 100vh;
 }
 
-.spacer {
-  height: 500px;
+.content {
+  background: #283244;
+  height: 200vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-text {
+  font-family: "scale-variable";
+  width: 80vw;
+  font-size: 10vh;
+  line-height: 120%;
+  font-variation-settings: "wght" 200, "wdth" 110;
 }
 
 *::-webkit-scrollbar {

@@ -1,12 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector(".hero-header-text");
-    const text = new SplitType(header, { types: 'words' });
-    // console.log(text.words);
-    gsap.from(text.words,{
+    const introText = document.querySelector(".intro-text")
+    const headerText = new SplitType(header, { types: 'words' });
+    const text = new SplitType(introText, {types: 'words'})
+    const introTextHeight = introText.getBoundingClientRect()
+
+    gsap.from(headerText.words,{
         y:1000,
         stagger:.1,
         ease: "expo.out",
         duration:.7,
     })
-    // gsap.from(".hero-header-wrapper",{backgroundSize: (i, e) => bgSize(150%)})
-});
+
+    gsap.to(header,{
+        y:3400,
+        x:-3000,
+        scale: 175,
+        color:'#283244',
+        scrollTrigger: {
+            trigger: ".hero-header-wrapper",
+            pin: true,
+            scrub: true,
+            start: 'top top',
+            end: window.innerHeight*2,
+            markers: true,
+        },
+    })
+
+    gsap.from(text.words,{
+        color:"#727272",
+        ease:'none',
+        stagger:1,
+        scrollTrigger:{
+            trigger:".content",
+            pin:true,
+            scrub:true,
+            start: () => `top+=${(introTextHeight.height - window.innerHeight)/2} top`,
+            end: () => `+=${window.innerHeight*1.5}px`,
+            markers: true
+        },
+    }
+);})

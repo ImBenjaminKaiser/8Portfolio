@@ -3,7 +3,7 @@
      padding: 0
 
 body
-     // background: #feffed
+     // background: #283244
 
 .hero-header-wrapper
      display: flex
@@ -23,15 +23,33 @@ body
      align-self: center
      line-height: 1.1em
      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+     z-index: -1
+
 svg
      width: 100vw
      height: 100vh
 
-.spacer
-     height: 500px
+.content
+     background: #283244
+     height: 200vh
+     z-index: 10
+     // padding-top: 100vh
+     display: flex
+     justify-content: center
+
+.intro-text
+     font-family: "scale-variable"
+     width: 80vw
+     font-size: 10vh
+     line-height: 120%
+     font-variation-settings: "wght" 200, "wdth" 110
+     
+
+
 
 *::-webkit-scrollbar
      display: none
 
 .stretch-font
      font-family: 'Stretch Pro', sans-serif
+

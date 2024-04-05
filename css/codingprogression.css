@@ -8,7 +8,6 @@ code {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
-  font-family: "Courier New", Courier, monospace;
 }
 
 td:nth-child(2), td:nth-child(3) {

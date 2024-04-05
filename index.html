@@ -10,14 +10,13 @@
     <!-- Link the homepage and global CSS files to this file -->
     <link rel="stylesheet" href="/css/homepage.css" />
     <link rel="stylesheet" href="/css/global.css" />
+    <!-- CDN links to GSAP (animation library) core and ScrollTrigger plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Link this page's Javascript file to this file, as well as the global JS file -->
     <script type="text/javascript" src="js/homepage.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
-
-    <!-- CDN links to GSAP (animation library) core and ScrollTrigger plugin-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- CDN link for lenis smooth scrolling JS library -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
@@ -31,8 +30,13 @@
   </head>
   <body>
     <main>
-      <div class="hero-header-wrapper">
-        <p class="hero-header-text">Benjjjammin Kaaiseer</p>
+      <div class="hero-text-wrapper">
+        <div class="hero-header-wrapper">
+          <p class="hero-header-text">Benjjjammin Kaaiseer</p>
+          <p class="hero-subheader setvie-font">
+            Student. Designer. Photographer.
+          </p>
+        </div>
       </div>
       <div class="content">
         <div class="content-wrapper setvie-font white">
@@ -43,6 +47,13 @@
           </p>
         </div>
       </div>
+      <div class="me-img">
+        <img
+          src="/img/me.webp"
+          alt="Benjamin Kaiser smiling with a grey vest, white shirt, and mint green tie, on a shiny white sequence background"
+          width="300px" />
+      </div>
+      <div class="button"><a href="5qualities.html">5 Qualities Page</a></div>
     </main>
   </body>
 </html>

@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerText = new SplitType(header, { types: 'words' });
     const text = new SplitType(introText, {types: 'words'})
     const introTextHeight = introText.getBoundingClientRect()
+    var tl = gsap.timeline({})
 
     gsap.from(headerText.words,{
         y:1000,
@@ -23,10 +24,46 @@ document.addEventListener('DOMContentLoaded', () => {
             scrub: true,
             start: 'top top',
             end: window.innerHeight*2,
-            markers: true,
+            // markers: true,
+            // onLeave() {header.classList.add('display-none')},
+            // onEnterBack() {btn.classList.remove('display-none')},
         },
     })
+    gsap.to(".hero-subheader",{
+        opacity:0,
+        scrollTrigger: {
+            trigger: ".hero-header-wrapper",
+            // pin: true,
+            scrub: true,
+            start: 'bottom top',
+            end: '.content',
+            
+            // markers: true,
+        },
+    }, console.log("Subheader animating"))
+    // function setHeaderBig(){
+    // console.log("Header set big")
+    // gsap.to(header,{
+    //     scale:175,
+    //     scrollTrigger:{
+    //         trigger:'.hero-header-wrapper',
+    //         start:"top top"
+    //     }
+    // })
+    // }
 
+    // gsap.set(header,{
+    //     scale:1,
+    //     scrollTrigger: {
+    //         trigger: ".hero-header-wrapper",
+    //         scrub: true,
+    //         start:"top center",
+    //         end: "top bottom",
+    //         onReEnter: setHeaderBig(),
+    //         markers: true
+    //     }
+    // })
+    
     gsap.from(text.words,{
         color:"#727272",
         ease:'none',
@@ -35,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger:".content",
             pin:true,
             scrub:true,
-            start: () => `top+=${(introTextHeight.height - window.innerHeight)/2} top`,
+            // start: () => `top+=${(introTextHeight.height - window.innerHeight)/2} top`,
             end: () => `+=${window.innerHeight*1.5}px`,
             markers: true
         },
     }
-);})
+    );})

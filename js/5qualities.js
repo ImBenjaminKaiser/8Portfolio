@@ -9,7 +9,7 @@
 
 // Wait for the DOM to be fully loaded
 // Fixes gsap throwing error "scrollWrapperWrapper not defined"
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
     // For respecting prefers reduced motion preference; from here: https://natclark.com/tutorials/javascript-reduced-motion/
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     gsap.to(".five-qualities",{
-        y:-(scrollWrapperWidth.height/2),
+        y:-(scrollWrapperWidth.height/2.5),
         scrollTrigger: {
             trigger: scrollWrapperWrapper,
             start: "top top",

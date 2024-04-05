@@ -28,15 +28,16 @@
     height: 300px
     z-index: -2
     backdrop-filter: brightness(80%)
-    // filter: blur(5px)
+    border-radius: 50px
 
 .edge-blurer-div
     position: absolute
     width: 575px
     height: 315px
     z-index: -1
-    backdrop-filter: blur(5px)
-    top: -7.5px
+    backdrop-filter: blur(3px)
+    top: 115px
+    border-radius: 50px
 
 
 .spacer
@@ -80,17 +81,6 @@
     font-size: 45px
     letter-spacing: .1rem
 
-html.lenis 
-    height: auto
-
-.lenis.lenis-smooth 
-    scroll-behavior: auto
-
-.lenis.lenis-smooth [data-lenis-prevent] 
-    overscroll-behavior: contain
-
-.lenis.lenis-stopped 
-    overflow: hidden
 
 @media screen and (prefers-reduced-motion) 
     .scroll-wrapper

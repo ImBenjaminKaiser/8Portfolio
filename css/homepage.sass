@@ -9,7 +9,9 @@ body
      display: flex
      height: 100vh
      width: 100%
+     flex-direction: column
      justify-content: center
+     align-items: center
      background-image: url("../img/background.svg")
      background-repeat: no-repeat
 
@@ -31,9 +33,10 @@ svg
 
 .content
      background: #283244
+     // background:  rgba(0,0,0,0)
      height: 200vh
      z-index: 10
-     // padding-top: 100vh
+     // margin-top: -75%
      display: flex
      justify-content: center
 
@@ -42,14 +45,14 @@ svg
      width: 80vw
      font-size: 10vh
      line-height: 120%
+     height: 100%
+     padding: 100px
      font-variation-settings: "wght" 200, "wdth" 110
      
-
-
-
 *::-webkit-scrollbar
      display: none
 
 .stretch-font
      font-family: 'Stretch Pro', sans-serif
+
 

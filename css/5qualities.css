@@ -25,8 +25,8 @@ body {
   flex-direction: row;
   border-radius: 16px;
   z-index: 3;
-  -webkit-backdrop-filter: brightness(75%) saturate(150%);
-          backdrop-filter: brightness(75%) saturate(150%);
+  -webkit-backdrop-filter: brightness(75%) saturate(175%);
+          backdrop-filter: brightness(75%) saturate(175%);
 }
 
 .spacer {

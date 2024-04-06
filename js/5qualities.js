@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".five-qualities",{
-        y:-(scrollWrapperWidth.height/2.5),
+        y:-(scrollWrapperWidth.height/2),
         scrollTrigger: {
             trigger: scrollWrapperWrapper,
             start: "top top",

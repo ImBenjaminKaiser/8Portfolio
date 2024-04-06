@@ -10,6 +10,9 @@
     width: 100%
     background-image: url(../img/5qualitybg.svg)
 
+body
+    background-image: url(../img/5qualitybg.svg)
+
 
 .scroll-box-element
     display: flex
@@ -19,25 +22,9 @@
     height: 300px
     padding: 25px
     flex-direction: row
-    border-radius: 10px
+    border-radius: 16px
     z-index: 3
-
-.blurry-edges-div
-    position: absolute
-    width: 550px
-    height: 300px
-    z-index: -2
-    backdrop-filter: brightness(80%)
-    border-radius: 50px
-
-.edge-blurer-div
-    position: absolute
-    width: 575px
-    height: 315px
-    z-index: -1
-    backdrop-filter: blur(3px)
-    top: 115px
-    border-radius: 50px
+    backdrop-filter: brightness(75%) saturate(150%)
 
 
 .spacer
@@ -95,7 +82,11 @@
         height: 100%
     .scroll-box-element
         margin: 25px
+    
 
 @media not screen and (prefers-reduced-motion: reduce)
     .scroll-wrapper-wrapper
         height:100vh
+
+body>nav
+    margin-top: 8px

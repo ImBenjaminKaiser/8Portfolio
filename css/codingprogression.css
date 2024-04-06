@@ -16,7 +16,6 @@ code {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 64px;
 }
 
 .gsap-info-wrapper > h1, h2 {
@@ -191,4 +190,8 @@ em {
 
 .gsap-info-wrapper > a:visited {
   color: #c7c7c7;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=codingprogression.css.map */

@@ -6,7 +6,7 @@ nav {
   padding: 0px;
   display: flex;
   align-items: center;
-  margin: 8px;
+  margin: 0px 8px 8px 8px;
   padding: 0px 32px;
 }
 
@@ -31,7 +31,6 @@ nav li {
 
 nav a {
   display: block;
-  line-height: 45px;
   padding: 8px 16px;
   text-decoration: none;
   color: #FFFFFF;
@@ -98,6 +97,7 @@ nav ul.sub-menus li {
 nav ul.sub-menus a {
   color: #FFFFFF;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 nav li:hover ul.sub-menus {
@@ -116,8 +116,25 @@ nav ul.sub-menus a:hover {
   font-family: "contralto-big", sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: white;
+  color: #FFFFFF;
   font-size: 32px;
-  margin: 16px 16px 16px 0px;
+  margin: 20px 16px 16px 0px;
   white-space: nowrap;
+  align-self: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.curent-page {
+  font-weight: 900;
+  color: #458BA1;
+  text-decoration: underline;
+}
+
+.current-page:hover {
+  background: #313131;
+  color: #FFFFFF;
 }/*# sourceMappingURL=navbar.css.map */

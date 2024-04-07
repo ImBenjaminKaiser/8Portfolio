@@ -5,6 +5,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 body, html {
   margin: 0px;
   padding: 0px;

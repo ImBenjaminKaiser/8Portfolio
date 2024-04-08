@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Only apply Lenis smooth scrolling if the user has not set prefers reduced motion to reduce
     if (isReduced === false){
         
+        // Wait for 100 ms to check so the useLenis variable can be defined in the page's JS file
+        setTimeout(() => {
         if (useLenis === true){
         // From lenis docs: https://github.com/darkroomengineering/lenis?tab=readme-ov-file#gsap-scrolltrigger
         // Initializes a Lenis object that makes scrolling smoother
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lenis.raf(time * 1000)
         });
     }
+},100)
         // Check to see if page has waves footer
         const hasFooter = document.querySelector('.wave1');
         // If not, don't animate it

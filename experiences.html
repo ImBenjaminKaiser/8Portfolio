@@ -14,6 +14,8 @@
 
     <!-- CDN links to GSAP (animation library) core and ScrollTrigger plugin-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- FIXME: fix errors thrown when scrolltrigger is not included -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Link this page's Javascript file to this file, as well as the global JS file -->
@@ -21,106 +23,170 @@
     <script type="text/javascript" src="js/global.js"></script>
 
     <!-- CDN link for lenis smooth scrolling JS library -->
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+    <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script> -->
 
     <!-- CDN links for Stevie Sans, Scale Variable, and Stretch Pro fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/fmf0nsi.css" />
   </head>
   <body>
-    <nav>
-      <div class="logo-wrapper">
-        <a class="logo" href="/index.html">Benjamin Kaiser</a>
-      </div>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li>
-          <a class="dropdown-arrow" href="http://">Projects</a>
-          <ul class="sub-menus">
-            <li><a href="#">6th Grade</a></li>
-            <li><a href="#">7th Grade</a></li>
-            <li><a href="#">8th Grade</a></li>
-            <li><a href="#">9th Grade</a></li>
-            <li><a href="#">10th Grade</a></li>
-            <li><a href="#">11th Grade</a></li>
-            <li><a href="#">12th Grade</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/experiences.html" class="current-page">Experiences </a>
-        </li>
-        <li>
-          <a class="dropdown-arrow" href="#">Work Based Learning</a>
-          <ul class="sub-menus">
-            <li><a href="#">9th Grade</a></li>
-            <li><a href="#">10th Grade</a></li>
-            <li><a href="#">11th Grade</a></li>
-            <li><a href="#">12th Grade</a></li>
-          </ul>
-        </li>
-        <li><a href="/5qualities.html">Five Qualities</a></li>
-        <li>
-          <a href="/codingprogression.html">Coding Progression</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <h1>My Experiences</h1>
-      <p>
-        Ever since I got my first camera for Christmas in 2018, I have been in
-        love with photography. Over the years I’ve improved my skills, to the
-        point where I am satisfied with the quality of the pictures I am taking.
-        My favorite categories of photography are animal, architectural,
-        portrait, and nature. Below you can find some of my all-time favorite
-        pictures I’ve taken in those categories.
-      </p>
-      <div class="images">
-        <div class="cat-images">
-          <img loading="auto" src="/expImages/animal_8.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_9.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_1.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_3.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_2.webp" alt="" />
+    <div class="grainy-background">
+      <nav>
+        <div class="logo-wrapper">
+          <a class="logo" href="/index.html">Benjamin Kaiser</a>
         </div>
-        <div class="bird-images">
-          <img loading="auto" src="/expImages/animal_4.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_5.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_6.webp" alt="" />
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li>
+            <a class="dropdown-arrow" href="http://">Projects</a>
+            <ul class="sub-menus">
+              <li><a href="#">6th Grade</a></li>
+              <li><a href="#">7th Grade</a></li>
+              <li><a href="#">8th Grade</a></li>
+              <li><a href="#">9th Grade</a></li>
+              <li><a href="#">10th Grade</a></li>
+              <li><a href="#">11th Grade</a></li>
+              <li><a href="#">12th Grade</a></li>
+            </ul>
+          </li>
+          <li class="current-page">
+            <a href="/experiences.html">Experiences </a>
+          </li>
+          <li>
+            <a class="dropdown-arrow" href="#">Work Based Learning</a>
+            <ul class="sub-menus">
+              <li><a href="#">9th Grade</a></li>
+              <li><a href="#">10th Grade</a></li>
+              <li><a href="#">11th Grade</a></li>
+              <li><a href="#">12th Grade</a></li>
+            </ul>
+          </li>
+          <li><a href="/5qualities.html">Five Qualities</a></li>
+          <li>
+            <a href="/codingprogression.html">Coding Progression</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <p class="page-header">My Experences</p>
+        <div class="experences-hero-section">
+          <div class="experences-text-wrapper">
+            <h1>Photography</h1>
+            <p>
+              Ever since I got my first camera for Christmas in 2018, I have been in
+              love with photography. Over the years I’ve improved my skills, to the
+              point where I am satisfied with the quality of the pictures I am taking.
+              Because of my passion for photography, I have developed an eye for unique and creative compositions, even when I am not actively taking pictures. I can now better capture the blissful beauty of life and nature, without putting much thought into it. My favorite categories of photography are animal, architectural,
+              portrait, and nature. Below you can find some of my all-time favorite
+              pictures I’ve taken in those categories.
+            </p>
+          </div>
+          <!-- Iframe code from youtube -->
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/LpF_QXJeNC8?si=Hjiz_DZwAGqnp2vc&amp;start=45" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
         </div>
-        <div class="duck-images">
-          <img loading="auto" src="/expImages/animal_7.webp" alt="" />
-          <img loading="auto" src="/expImages/animal_10.webp" alt="" />
+    </div>
+      <div class="images-wrapper">
+        <div class="picture-section">
+          <h2 class="frist-category-header">Animal Photography</h2>
+          <div class="cat-pictures">
+            <div class="cat-pictures-line-1">
+              <img loading="eager" src="/expImages/animal_8.webp" alt="" />
+              <img loading="eager" src="/expImages/animal_9.webp" alt="" />
+            </div>
+            <div class="cat-pictures-line-2">
+              <img loading="eager" src="/expImages/animal_1.webp" alt="" />
+              <img loading="eager" src="/expImages/animal_3.webp" alt="" />
+              <img loading="eager" src="/expImages/animal_2.webp" alt="" />
+            </div>
+            <p class="image-caption">My cat, Asher</p>
+          </div>
+          <div class="animal-pictures">
+            <div class="bird-pictures">
+              <img loading="eager" src="/expImages/animal_4.webp" alt="" />
+              <img loading="eager" src="/expImages/animal_5.webp" alt="" />
+              <!-- <img loading="eager" src="/expImages/animal_6.webp" alt="" /> -->
+            </div>
+            <div class="duck-pictures">
+              <img loading="eager" src="/expImages/animal_7.webp" alt="" />
+              <img loading="eager" src="/expImages/animal_10.webp" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="exterior-images">
-          <img loading="auto" src="/expImages/architecture_1.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_5.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_6.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_7.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_8.webp" alt="" />
+        <div class="picture-section">
+          <h2 class="category-header">Architecture Photography</h2>
+          <div class="architecture-pictures">
+            <div class="exterior-pictures-line-1">
+              <img loading="eager" src="/expImages/architecture_5.webp" alt="" />
+              <img loading="eager" src="/expImages/architecture_6.webp" alt="" />
+              <img loading="eager" src="/expImages/architecture_1.webp" alt="" />
+            </div>
+            <div class="exterior-pictures-line-2">
+              <img loading="eager" src="/expImages/architecture_8.webp" alt="" />
+              <img loading="eager" src="/expImages/architecture_7.webp" alt="" />
+              <img loading="eager" src="/expImages/architecture_4.webp" alt="" />
+            </div>
+            <div class="interior-pictures">
+              <img loading="eager" src="/expImages/architecture_2.webp" alt="" />
+              <img loading="eager" src="/expImages/architecture_3.webp" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="interior-images">
-          <img loading="auto" src="/expImages/architecture_2.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_3.webp" alt="" />
-          <img loading="auto" src="/expImages/architecture_4.webp" alt="" />
+        <div class="picture-section">
+          <h2 class="category-header">Nature Photography</h2>
+          <div class="flower-pictures">
+            <img loading="eager" src="/expImages/nature_1.webp" alt="" />
+            <img loading="eager" src="/expImages/nature_2.webp" alt="" />
+          </div>
         </div>
-        <div class="flower-images">
-          <img loading="auto" src="/expImages/nature_1.webp" alt="" />
-          <img loading="auto" src="/expImages/nature_2.webp" alt="" />
-        </div>
-        <div class="homecoming-pictures">
-          <img loading="auto" src="/expImages/portrait_1.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_2.webp" alt="" />
-        </div>
-        <div class="people-portraits-images">
-          <img loading="auto" src="/expImages/portrait_4.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_3.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_9.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_5.webp" alt="" />
-        </div>
-        <div class="black-white-images">
-          <img loading="auto" src="/expImages/portrait_7.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_6.webp" alt="" />
-          <img loading="auto" src="/expImages/portrait_10.webp" alt="" />
+        <div class="picture-section">
+          <h2 class="category-header">Portrait Photography</h2>
+          <div class="homecoming-pictures">
+            <img loading="eager" src="/expImages/portrait_1.webp" alt="" />
+            <img loading="eager" src="/expImages/portrait_2.webp" alt="" />
+            <p class="image-caption">
+              Homecoming 2023 with my Brother, Emerson, and his girlfriend, Chloe
+            </p>
+          </div>
+          <div class="people-portraits-pictures">
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_4.webp" alt="" />
+              <p class="image-caption">Model: Millian Naik</p>
+            </div>
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_3.webp" alt="" />
+              <p class="image-caption">Model: Jaxon Hamilton</p>
+            </div>
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_9.webp" alt="" />
+              <p class="image-caption">Model: Eliot Simon</p>
+            </div>
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_5.webp" alt="" />
+              <p class="image-caption">Model: Millian Naik</p>
+            </div>
+          </div>
+          <div class="black-white-pictures">
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_10.webp" alt="" />
+              <p class="image-caption">Model: Chris Kost</p>
+            </div>
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_7.webp" alt="" />
+              <p class="image-caption">Model: Paxton Haper</p>
+            </div>
+            <div class="picture-with-caption">
+              <img loading="eager" src="/expImages/portrait_6.webp" alt="" />
+              <p class="image-caption">Model: Sean Kaiser, My dad</p>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

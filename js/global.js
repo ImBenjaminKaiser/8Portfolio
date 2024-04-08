@@ -3,10 +3,6 @@
 // Fixes the GSAP not defined error
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Register ScrollTrigger plugin
-    // Typically done automatically but best practice to manually register it
-    gsap.registerPlugin(ScrollTrigger);
-
 
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
     // For respecting prefers reduced motion preference; from here: https://natclark.com/tutorials/javascript-reduced-motion/
@@ -14,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Only apply Lenis smooth scrolling if the user has not set prefers reduced motion to reduce
     if (isReduced === false){
         
+        if (useLenis === true){
         // From lenis docs: https://github.com/darkroomengineering/lenis?tab=readme-ov-file#gsap-scrolltrigger
         // Initializes a Lenis object that makes scrolling smoother
         const lenis = new Lenis({
@@ -31,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.ticker.add((time)=>{
         lenis.raf(time * 1000)
         });
-
+    }
         // Check to see if page has waves footer
         const hasFooter = document.querySelector('.wave1');
         // If not, don't animate it
@@ -60,5 +57,4 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to(".wave5",{x:xAmount,duration:wave5dur,repeat:-1,yoyo:true,ease:'none'})
 
         }
-    }
-})
+    }})

@@ -43,11 +43,15 @@ svg {
 }
 
 .experences-text-wrapper {
-  width: 400px;
+  width: 500px;
 }
 
 .experences-text-wrapper > h1 {
   margin-bottom: 8px;
+}
+
+.experences-text-wrapper > p {
+  line-height: 1.5;
 }
 
 p.page-header {

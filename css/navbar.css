@@ -43,6 +43,8 @@ nav a {
 nav a.dropdown-arrow:after {
   content: "▾";
   margin-left: 5px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav li a:hover {
@@ -128,10 +130,10 @@ nav ul.sub-menus a:hover {
   align-items: center;
 }
 
-.curent-page {
+.current-page > a {
   font-weight: 900;
-  color: #458BA1;
   text-decoration: underline;
+  text-decoration-color: #458BA1;
 }
 
 .current-page:hover {

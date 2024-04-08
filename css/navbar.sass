@@ -1,5 +1,5 @@
 nav
-    background: #313131
+    background:#313131
     // background-image: url(../img/navbarbg.svg)
     padding-right: 18px
     border-radius: 16px
@@ -37,6 +37,9 @@ nav a
 nav a.dropdown-arrow:after 
     content: "\25BE"
     margin-left: 5px
+    text-decoration: none
+    // https://stackoverflow.com/questions/1238881/text-decoration-and-the-after-pseudo-element-revisited
+    display: inline-block
 
 nav li a:hover 
     color: #FFFFFF
@@ -112,10 +115,11 @@ nav ul.sub-menus a:hover
     display: flex
     align-items: center
     
-.curent-page
+.current-page>a
     font-weight: 900
-    color: #458BA1
     text-decoration: underline
+    text-decoration-color: #458BA1
+    // color: #458BA1
     // background-color: url(../img/navbar.svg)
 
 .current-page:hover

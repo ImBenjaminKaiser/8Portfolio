@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Only apply Lenis smooth scrolling if the user has not set prefers reduced motion to reduce
     if (isReduced === false){
         
-        // Wait for 100 ms to check so the useLenis variable can be defined in the page's JS file
+        // Wait for 100 ms to check so the canUseLenis variable can be defined in the page's JS file
         setTimeout(() => {
-        if (useLenis === true){
+        if (canUseLenis === true){
         // From lenis docs: https://github.com/darkroomengineering/lenis?tab=readme-ov-file#gsap-scrolltrigger
         // Initializes a Lenis object that makes scrolling smoother
         const lenis = new Lenis({

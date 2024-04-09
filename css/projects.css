@@ -1,3 +1,8 @@
 .grainy-background {
   background-image: url("../img/projects.svg");
+}
+
+.compare-img {
+  width: 40vw;
+  margin: 5vw;
 }/*# sourceMappingURL=projects.css.map */

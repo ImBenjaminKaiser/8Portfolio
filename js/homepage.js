@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var useLenis = true
+    var canUseLenis = true
     const header = document.querySelector(".hero-header-text");
     const introText = document.querySelector(".intro-text")
     const headerText = new SplitType(header, { types: 'words' });

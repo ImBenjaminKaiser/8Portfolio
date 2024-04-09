@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var useLenis = true
+    var canUseLenis = true
     // Make code blocks with  HighlightJS
     hljs.highlightAll()
         // They are centered on the page because of the wrapper so this moves the left edge of the waves to the left edge of the screen

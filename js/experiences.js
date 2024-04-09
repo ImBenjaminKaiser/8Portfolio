@@ -1,1 +1,1 @@
-var useLenis = false
+var canUseLenis = false

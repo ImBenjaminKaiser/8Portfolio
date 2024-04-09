@@ -1,6 +1,5 @@
 nav
     background:#313131
-    // background-image: url(../img/navbarbg.svg)
     padding-right: 18px
     border-radius: 16px
     padding: 0px
@@ -44,9 +43,6 @@ nav a.dropdown-arrow:after
 nav li a:hover 
     color: #FFFFFF
     background: #458BA1
-    // opacity: 50%
-    // blend-mode: overlay
-    // background-image: url(../img/navbar.svg)
     transition: all 0.2s
 
 nav input 
@@ -119,9 +115,29 @@ nav ul.sub-menus a:hover
     font-weight: 900
     text-decoration: underline
     text-decoration-color: #458BA1
-    // color: #458BA1
-    // background-color: url(../img/navbar.svg)
 
 .current-page:hover
     background: #313131
     color: #FFFFFF
+
+.footer-content
+    background: #c62368
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-top:-5px
+    padding: 32px
+
+.footer-content>button
+    outline: none
+    background: none
+    text-shadow: none
+    border: none
+    cursor: pointer
+    font-size: 7vw
+    font-weight: 800
+
+.footer-content>button::after
+    content:'↑'
+    margin-left: 0.2rem

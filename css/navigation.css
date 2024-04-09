@@ -139,4 +139,29 @@ nav ul.sub-menus a:hover {
 .current-page:hover {
   background: #313131;
   color: #FFFFFF;
-}/*# sourceMappingURL=navbar.css.map */
+}
+
+.footer-content {
+  background: #c62368;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -5px;
+  padding: 32px;
+}
+
+.footer-content > button {
+  outline: none;
+  background: none;
+  text-shadow: none;
+  border: none;
+  cursor: pointer;
+  font-size: 7vw;
+  font-weight: 800;
+}
+
+.footer-content > button::after {
+  content: "↑";
+  margin-left: 0.2rem;
+}/*# sourceMappingURL=navigation.css.map */

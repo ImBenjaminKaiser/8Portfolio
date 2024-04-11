@@ -11,6 +11,9 @@
 // Fixes gsap throwing error "scrollWrapperWrapper not defined"
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Set to true to indicate that the page can use smooth scrolling, if they do not have prefers reduced motion set to true
+    canUseLenis = true
+
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
     // For respecting prefers reduced motion preference; from here: https://natclark.com/tutorials/javascript-reduced-motion/
 
@@ -55,17 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
             anticipatePin: 1,
         }
     });
-    //I might use this animation, might not idk
-    // gsap.to(".five-qualities",{
-    //     x:window.innerWidth-fiveQualityHeaderWidth.width*1.2,
-    //     scrollTrigger:{
-    //         trigger: scrollWrapperWrapper,
-    //         start: "+=50",
-    //         end: "+="+ scrollWrapperWidth.width/1.1,
-    //         scrub: true,
-    //         markers:true,
-    //         anticipatePin: 1,
-    //     }})
 
     // learned form gsap docs and previous knowledge
     // ScrollTrigger docs: https://gsap.com/docs/v3/Plugins/ScrollTrigger/
@@ -86,6 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-}//Prefersreduced motion
+}//Prefers reduced motion
 
 });//DOM lister  

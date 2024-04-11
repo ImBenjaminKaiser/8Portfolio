@@ -1,4 +1,7 @@
-@import url("https://use.typekit.net/fmf0nsi.css");
+body > * {
+  transition: none;
+}
+
 .scroll-wrapper {
   display: flex;
   flex-direction: row;

@@ -26,9 +26,8 @@
     <!-- CDN links for Stevie Sans, Scale Variable, and Stretch Pro fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/fmf0nsi.css" />
   </head>
-  <body>
-    <div class="grainy-bckground">
-      <nav>
+  <div class="grainy-background">
+    <nav>
         <div class="logo-wrapper">
           <a class="logo" href="/index.html">Benjamin Kaiser</a>
         </div>
@@ -65,39 +64,57 @@
         </ul>
       </nav>
       <main>
-        <p class="page-header">Projects</p>
-        <h1>My Growth</h1>
-        <p>
-          At DRSS this year, I have grown in many subjects. In my opinion, I
-          have grown the most in web development. Comparing this year's
-          portfolio to last year's, you can see that my designs have become more
-          consistent, better organized, and easier to digest and understand
-          information on the page. The thing that helped me the most in creating
-          better designs was learning the 8 pixel grid. The 8 pixel grid rule
-          states that the distance between elements should always be a multiple
-          of 8. Because of this consistent spacing, the page is better organized
-          and is more pleasing to the eyes.
-        </p>
-      </main>
-      <button class="compare-button" onclick="compare('home')">
-        Home page
-      </button>
-      <button class="compare-button" onclick="compare('experiences')">
-        Experiences
-      </button>
-      <button class="compare-button" onclick="compare('qualities')">
-        5 Qualities
-      </button>
-      <button class="compare-button" onclick="compare('projects')">
-        Projects
-      </button>
-      <button class="compare-button" onclick="compare('coding')">
-        Coding progression
-      </button>
-      <img src="" alt="" class="compareSeventh compare-img" />
-      <img src="" alt="" class="compareEigth compare-img" />
-    </div>
-
+        <div class="text-buttons-wrapper">
+          <p class="page-header">Projects</p>
+          <h1>My Growth</h1>
+          <p class="growth-text">
+            At DRSS this year, I have grown in many subjects. In my opinion, I
+            have grown the most in web development. Comparing this year's
+            portfolio to last year's, you can see that my designs have become more
+            consistent, better organized, and easier to digest and understand
+            information on the page. The thing that helped me the most in creating
+            better designs was learning the 8 pixel grid. The 8 pixel grid rule
+            states that the distance between elements should always be a multiple
+            of 8. Because of this consistent spacing, the page is better organized
+            and is more pleasing to the eyes.
+          </p>
+        </div>
+      </div>
+      <div class="button-wrapper-wrapper">
+        <h1>Compare my 7th and 8th grade pages</h1>
+        <div class="button-wrapper">
+          <button class="compare-button" onclick="compare('homepage')">
+                    Home page
+          </button>
+          <button class="compare-button" onclick="compare('experiences')">
+                    Experiences
+          </button>
+          <button class="compare-button" onclick="compare('qualities')">
+                    5 Qualities
+          </button>
+          <button class="compare-button" onclick="compare('projects')">
+                    Projects
+          </button>
+          <button class="compare-button" onclick="compare('coding')">
+                    Coding progression
+          </button>
+        </div>
+      </div>
+      <div class="images-wrapper">
+        <div class="seventh-img-wrapper">
+          <img
+            src="/img/homepage_seventh.jpeg"
+            alt=""
+            class="compareSeventh compare-img" />
+        </div>
+        <div class="eighth-img-wrapper">
+          <img
+            src="/img/homepage_eighth.jpeg"
+            alt=""
+            class="compareEighth compare-img" />
+        </div>
+      </div>
+</main>
     <footer>
       <svg
         id="visual"
@@ -135,9 +152,9 @@
         <div class="code-info">
           <p>This page is licensed under the GPL-3.0 license</p>
         </div>
-        <a href="https://github.com/ImBenjaminKaiser/8Portfolio"
-          >View Source Code</a
-        >
+        <a href="https://github.com/ImBenjaminKaiser/8Portfolio">
+          View Source Code
+        </a>
       </div>
     </footer>
   </body>

@@ -1,0 +1,12 @@
+ADD COMMENTS EVERYWHERE
+remove sass and add comments to CSS
+Add more content to coding progression table
+
+Add game to pagenotmade.html
+license photos under a non-public license
+add alt attributes to images on experiences page
+add aria labels to projects page buttons
+change link color on homepage
+Add loading screen
+Add contact for non-watermarked images on experiences page
+Add a tldr section to coding progression page

@@ -12,7 +12,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Set to true to indicate that the page can use smooth scrolling, if they do not have prefers reduced motion set to true
-    canUseLenis = true
+    canUseLenis = false
 
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
     // For respecting prefers reduced motion preference; from here: https://natclark.com/tutorials/javascript-reduced-motion/

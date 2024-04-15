@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Wait for 100 ms to check so the canUseLenis variable can be defined in the page's JS file
         setTimeout(() => {
-        if (canUseLenis === true){
+        if (canUseLenis !== null){
         // From lenis docs: https://github.com/darkroomengineering/lenis?tab=readme-ov-file#gsap-scrolltrigger
         // Initializes a Lenis object that makes scrolling smoother
         const lenis = new Lenis({

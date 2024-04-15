@@ -2,6 +2,7 @@ var score = 0;
 var eventListenerAdded = false;
 var numDivs = 2;
 
+
 if (localStorage.getItem("createdHighScoreItems") == null) {
   localStorage.setItem("createdHighScoreItems", true);
   console.log("Local Storage scores created")
